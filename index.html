@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonatiuj Sánchez</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar container">
+            <a class="navbar__logo" href="#">{TSX}</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!-- <li class="nav__item"><a class="nav__link" href="">Hola</a></li> -->
+                    <li class="nav__item"><a class="nav__link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Sobre mi</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="button-change-theme">
+                <i class='bx bx-sun' ></i>
+            </button>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <div class="hero__content">
+                <figure class="hero__figure">
+                    <img 
+                        src="./assets/img/ton.webp" 
+                        alt="Tonatiuj Sánchez" 
+                        title="Tonatiuj Sánchez"
+                    >
+                </figure>
+                <div>
+                    <div>
+                        <p class="hero__name">Tonatiuj Sánchez</p>
+                        <h1 class="hero__title">Desarrollador Web FullStack</h1>
+                    </div>
+                    <ul class="hero__social-list">
+                        <li class="hero__social-item">
+                            <a href="https://www.linkedin.com/in/tonatiujsanchez/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a>
+                        </li>
+                        <li class="hero__social-item">
+                            <a href="https://github.com/tonatiujsanchez" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
+                        </li>
+                        <li class="hero__social-item">
+                            <a href="https://twitter.com/tonatiujsanchez" target="_blank" rel="noopener noreferrer"><i class='bx bxl-twitter' ></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="hero__about">Desarrollador Web FullStack en constante búsqueda de nuevos conocimientos y desafíos para crear experiencias únicas.</p>
+            <div class="hero__actions">
+                <a class="hero__actions-link" href="#">
+                    <i class='bx bx-download hero__download-cv' ></i> Descargar CV 
+                </a>
+                <!-- <a class="hero__actions-link" href="#">
+                    <i class='bx bxs-briefcase-alt-2'></i>Proyectos <i class='bx bx-right-arrow-alt link-external-icon'></i>
+                </a> -->
+                <a class="hero__actions-link" href="#">
+                    <i class='bx bx-mail-send' ></i>Contacto <i class='bx bx-right-arrow-alt link-external-icon'></i>
+                </a>
+            </div>
+        </section>
+        <section id="proyectos" class="section">
+            <h2>Proyectos</h2>
+            <p class="section__description">Estos son los proyectos más recientes en los que he trabajado.</p>
+            <div class="projects">
+                <article class="project">
+                    <a href="./projects/devmanager.html">
+                        <figure class="project__figure">
+                            <img 
+                                src="./assets/img/projects/devmanager.webp" 
+                                alt="DevManager - Gestor de proyectos colaborativos" 
+                                title="DevManager - Gestor de proyectos colaborativos"
+                                class="project__img"
+                            >
+                        </figure>
+                    </a>
+                    <div class="project__description">
+                        <h3 class="project__title">
+                            <a class="project__title-link" href="./projects/devmanager.html">DevManager</a>
+                            <span class="project__year">· 2024</span>
+                        </h3>
+                        <p class="project__summary">
+                            DevManager es un proyecto personal en constante evolución, diseñado para la gestión eficiente de proyectos colaborativos con características en tiempo real.
+                        </p>
+                    </div>
+                </article>
+                <article class="project">
+                    <a href="./projects/legado-de-tlapa.html">
+                        <figure class="project__figure">
+                            <img 
+                                src="./assets/img/projects/legado-de-tlapa.webp" 
+                                alt="Legado de Tlapa - Medio de comunicación digital" 
+                                title="Legado de Tlapa - Medio de comunicación digital"
+                                class="project__img"
+                            >
+                        </figure>
+                    </a>
+                    <div class="project__description">
+                        <h3 class="project__title">
+                            <a class="project__title-link" href="./projects/legado-de-tlapa.html">Legado de Tlapa</a>
+                            <span class="project__year">· 2023</span>
+                        </h3>
+                        <p class="project__summary">
+                            Diseñé y Desarrollé el sitio web de noticias del medio de comunicación digital Legado de Tlapa, incluyendo un dashboard para administrar su contenido con roles de usuario (editor y administrador).
+                        </p>
+                    </div>
+                </article>
+                <article class="project">
+                    <a href="./projects/contextos-guerrero.html">
+                        <figure class="project__figure">
+                            <img 
+                                src="./assets/img/projects/contextos-guerrero.webp" 
+                                alt="Contextos Guerrero - Medio de Comunicación estatal" 
+                                title="Contextos Guerrero - Medio de Comunicación estatal"
+                                class="project__img"
+                            >
+                        </figure>
+                    </a>
+                    <div class="project__description">
+                        <h3 class="project__title">
+                            <a class="project__title-link" href="./projects/contextos-guerrero.html">Contextos Guerrero</a>
+                            <span class="project__year">· 2023</span>
+                        </h3>
+                        <p class="project__summary">
+                            Diseñe y Desarrolle el sitio web de noticias del medio de comunicación estatal Contextos Guerrero con un dashboard administrativo con roles de usuario para administrar su estructura y contenido.
+                        </p>
+                    </div>
+                </article>
+                <article class="project">
+                    <a href="./projects/share-groups.html">
+                        <figure class="project__figure">
+                            <img 
+                                src="./assets/img/projects/share-groups.webp" 
+                                alt="Aplicación web para administrar páginas y grupos de Facebook" 
+                                title="Aplicación web para administrar páginas y grupos de Facebook"
+                                class="project__img"
+                            >
+                        </figure>
+                    </a>
+                    <div class="project__description">
+                        <h3 class="project__title">
+                            <a class="project__title-link" href="./projects/share-groups.html">Share Groups</a>
+                            <span class="project__year">· 2023</span>
+                        </h3>
+                        <p class="project__summary">
+                            Diseñe y Desarrolle una aplicación web para administrar páginas, perfiles y grupos de Facebook con el objetivo de compartir contenido de forma aleatoria.
+                        </p>
+                    </div>
+                </article>
+                <article class="project">
+                    <a href="./projects/admin-sites.html">
+                        <figure class="project__figure">
+                            <img 
+                                src="./assets/img/projects/admin-sites.webp" 
+                                alt="Aplicación web para administrar páginas y grupos de Facebook" 
+                                title="Aplicación web para administrar páginas y grupos de Facebook"
+                                class="project__img"
+                            >
+                        </figure>
+                    </a>
+                    <div class="project__description">
+                        <h3 class="project__title">
+                            <a class="project__title-link" href="./projects/admin-sites.html">Admin Sites</a>
+                            <span class="project__year">· 2023</span>
+                        </h3>
+                        <p class="project__summary">
+                            Diseñe y Desarrolle un dashboard administrativo con roles de usuario para administrar la estructura y contenido de sitios web informativos,
+                            con el propósito de tener una solución versátil y ágil, lista para ser implementada en proyectos de futuros clientes.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="experiencia" class="section">
+            <h2 class="section__title">Experiencia</h2>
+            <p class="section__description">
+                He tenido la oportunidad de utilizar diferentes programas de diseño y lenguajes de programación para satisfacer con éxito las necesidades de diferentes tipos de clientes.
+            </p>
+            <div class="jobs">
+                <article class="job">
+                    <header class="job__header">
+                        <div class="job__header-company">
+                            <figure class="job__header-figure">
+                                <img 
+                                    src="./assets/img/jobs/jmx-logo.webp" 
+                                    alt="Logo de MX - Agencia de Publicidad, diseño y desarrollo web"
+                                    title="Logo de MX - Agencia de Publicidad, diseño y desarrollo web"
+                                >
+                            </figure>
+                            <div>
+                                <h3 class="job__header-title">Desarrollador Web FullStack</h3>
+                                <p class="job__header-subtitle">JMX - Agencia de Publicidad y desarrollo web</p>
+                            </div>
+                        </div>
+                        <p class="job__header-period">
+                            2022 - 2023
+                        </p>
+                    </header>
+                    <div class="job__body">
+                        <!-- listado de actividades -->
+                    </div>
+                </article>
+                <article class="job">
+                    <header class="job__header">
+                        <div class="job__header-company">
+                            <figure class="job__header-figure">
+                                <img 
+                                    src="./assets/img/jobs/jmx-logo.webp" 
+                                    alt="Logo de MX - Agencia de Publicidad, diseño y desarrollo web"
+                                    title="Logo de MX - Agencia de Publicidad, diseño y desarrollo web"
+                                >
+                            </figure>
+                            <div>
+                                <h3 class="job__header-title">Web Master y Community Manager</h3>
+                                <p class="job__header-subtitle">JMX - Agencia de Publicidad y desarrollo web</p>
+                            </div>
+                        </div>
+                        <p class="job__header-period">
+                            2018 - 2022
+                        </p>
+                    </header>
+                    <div class="job__body">
+                        <!-- listado de actividades -->
+                    </div>
+                </article>
+                <article class="job">
+                    <header class="job__header">
+                        <div class="job__header-company">
+                            <figure class="job__header-figure">
+                                <img 
+                                    src="./assets/img/jobs/despertar-logo.webp" 
+                                    alt="Logo de Despertar de la Montaña - Medio de comunicación regional"
+                                    title="Logo de Despertar de la Montaña - Medio de comunicación regional"
+                                >
+                            </figure>
+                            <div>
+                                <h3 class="job__header-title">Desarrollador de Aplicaciones Móviles Híbridas</h3>
+                                <p class="job__header-subtitle">Despertar de la Montaña</p>
+                            </div>
+                        </div>
+                        <p class="job__header-period">
+                            2017 - 2028
+                        </p>
+                    </header>
+                    <div class="job__body">
+                        <!-- listado de actividades -->
+                    </div>
+                </article>
+                <article class="job">
+                    <header class="job__header">
+                        <div class="job__header-company">
+                            <figure class="job__header-figure">
+                                <img 
+                                    src="./assets/img/jobs/imtkd-logo.webp" 
+                                    alt="Logo del Instituto Marcial de TaeKwonDo"
+                                    title="Logo del Instituto Marcial de TaeKwonDo"
+                                >
+                            </figure>
+                            <div>
+                                <h3 class="job__header-title">Desarrollador Java</h3>
+                                <p class="job__header-subtitle">Instituto Marcial de TaeKwonDo</p>
+                            </div>
+                        </div>
+                        <p class="job__header-period">
+                            2017
+                        </p>
+                    </header>
+                    <div class="job__body">
+                        <!-- listado de actividades -->
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/theme.js"></script>
+</body>
+
+</html>
