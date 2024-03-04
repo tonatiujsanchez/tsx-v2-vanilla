@@ -11,16 +11,38 @@
 </head>
 
 <body>
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class='bx bx-chevron-up scroll-top__icon'></i>
+    </a>
     <header class="header">
         <div class="navbar container">
             <a class="navbar__logo" href="#">{TSX}</a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <!-- <li class="nav__item"><a class="nav__link" href="">Hola</a></li> -->
-                    <li class="nav__item"><a class="nav__link" href="#proyectos">Proyectos</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#experiencia">Experiencia</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#habilidades">Habilidades</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#contact">Contacto</a></li>
+                    <li class="nav__item nav__link-icon">
+                        <a class="nav__link" href="#about">
+                            <i class='bx bxs-home' ></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#proyectos">
+                            <i class='bx bxs-briefcase-alt-2 nav__link-icon'></i>
+                            <span class="nav__link-text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#experiencia">
+                            <i class='bx bxs-buildings nav__link-icon' ></i>
+                            <span class="nav__link-text">Experiencia</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav__item"><a class="nav__link" href="#habilidades">Habilidades</a></li> -->
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacto">
+                            <i class='bx bx-mail-send nav__link-icon' ></i>
+                            <span class="nav__link-text">Contacto</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <button class="button-change-theme">
@@ -29,7 +51,7 @@
         </div>
     </header>
     <main class="container">
-        <section class="hero">
+        <section id="about" class="hero">
             <div class="hero__content">
                 <figure class="hero__figure">
                     <img 
@@ -64,7 +86,7 @@
                 <!-- <a class="hero__actions-link" href="#">
                     <i class='bx bxs-briefcase-alt-2'></i>Proyectos <i class='bx bx-right-arrow-alt link-external-icon'></i>
                 </a> -->
-                <a class="hero__actions-link" href="#">
+                <a class="hero__actions-link" href="#contact">
                     <i class='bx bx-mail-send' ></i>Contacto <i class='bx bx-right-arrow-alt link-external-icon'></i>
                 </a>
             </div>
@@ -393,7 +415,7 @@
                 </div>
             </div>
         </section>   
-        <section id="contact" class="section">
+        <section id="contacto" class="section">
             <h2 class="section__title">Contacto</h2>
             <p class="section__description">Actualmente estoy disponible para asumir nuevos proyectos, así que siéntete libre de contactarme sobre cualquier idea que quieras contarme.</p>
             <div class="contact">
