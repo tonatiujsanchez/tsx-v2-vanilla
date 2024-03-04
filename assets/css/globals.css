@@ -3,22 +3,42 @@
 @import url('./animations.css');
 
 :root {
+    /*========== Fuentes ==========*/
+    --font-primary: "Poppins", sans-serif;
+    /* 300, 400, 500, 700 */
+
+
     /*========== Colores ==========*/
     --primary-color: #069C54;
     --primary-color-alt: #048654;
 
     --title-color: #0F172A;
-    /* --text-color: #656565; */
     --text-color: #71717A;
     --text-color-light: #A6A6A6;
     --body-color: #F8FAFC;
     --container-color: #FFFFFF;
     --content-color: #E5E5E5;
-    --color-border-primary: #DBDCDF;
-    
-    --border-primary: 0.1rem solid var(--color-border-primary);
+    --gray-primary-color: #DBDCDF;
+    --black-primary-color: #2b2b2b;
 
-    /* FONTS: 300, 400, 700 */
+    --javascript-color: #F7DF1E;
+    --typescript-color: #2F74C0;
+    --reactjs-color: #0FD2F4;
+    --nextjs-color: #000000;
+    --nodejs-color: #026E00;
+    --sql-color: #015E88;
+    --mongo-color: #07AC4F;
+    --github-color: #1C1F24;
+    --git-color: #F05030;
+    --sass-color: #CD669A;
+    --tailwind-color: #38BDF8;
+    --figma-color: #F34E1C;
+    --emotion-color: #D26AC2;
+    --redux-color: #764ABC;
+
+    /*========== Bordes ==========*/
+    --border-primary: 0.1rem solid var(--gray-primary-color);
+
 }
 
 html {
@@ -37,11 +57,11 @@ body.dark-theme{
     --body-color: #18181B;
     --container-color: #0F172A;
     --content-color: #222222;
-    --border-primary: #2b2b2b;
+    --border-primary: 0.1rem solid var(--black-primary-color);
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-primary);
     font-size: 1.6rem;
     margin: 0;
     background-color: var(--body-color);
@@ -84,6 +104,18 @@ img {
     width: 100%;
 }
 
+input {
+    border: none;
+    outline: none;
+}
+
+textarea {
+    font-family: var(--font-primary);
+    border: none;
+    outline: none;
+    resize: none;
+}
+
 .container {
     max-width: 76rem;
     margin-inline: auto;
@@ -114,4 +146,12 @@ img {
 .section__description {
     color: var(--text-color);
     text-wrap: pretty;
+}
+
+.svg__fill-contrast {
+    fill: var(--title-color);
+}
+
+.svg__fill-contrast--dark {
+    fill: var(--body-color);
 }
