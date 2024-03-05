@@ -355,11 +355,23 @@
     padding-inline: 2rem;
     border: var(--border-primary);
     border-radius: 0.5rem;
-    background-color: var(--body-color);
+    background: none;
     color: var(--title-color);
     font-size: 1.6rem;
     transition: border 0.3s;
+    z-index: 1;
 }
+
+.contact__form-label {
+    position: absolute;
+    inset-block-start: 1.3rem;
+    inset-inline-start: 1.5rem;
+    transition: all 0.4s;
+    padding-inline: 1rem;
+    font-size: 1.6rem;
+    z-index: -1;
+}
+
 
 .contact__form-input:hover {
     border: 0.1rem solid var(--text-color);
@@ -369,25 +381,23 @@
     border: 0.1rem solid var(--text-color);
 }
 
-.contact__form-input:focus + .contact__form-label {
+.contact__form-input::placeholder {
+    opacity: 0;
+}
+
+.contact__form-input:focus + .contact__form-label,
+.contact__form-input:not(:placeholder-shown).contact__form-input:not(:focus) + .contact__form-label {
     inset-block-start: -0.9rem;
     font-size: 1.2rem;
     color: var(--title-color);
+    background-color: var(--body-color);
+    z-index: 1;
 }
 
 .contact__form-input--message {
     height: 20rem;
 }
 
-.contact__form-label {
-    position: absolute;
-    inset-block-start: 1.3rem;
-    inset-inline-start: 1.5rem;
-    transition: all 0.3s;
-    background-color: var(--body-color);
-    padding-inline: 1rem;
-    font-size: 1.6rem;
-}
 
 .contact__form-submit-content {
     display: flex;

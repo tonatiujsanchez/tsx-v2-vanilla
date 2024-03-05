@@ -35,6 +35,8 @@
 
     /*========== Bordes ==========*/
     --border-primary: 0.1rem solid var(--gray-primary-color);
+    
+    /*========== Sombras ==========*/
     --shadow-primary: 0 0.5rem 1rem var(--gray-primary-color); 
 }
 
@@ -203,7 +205,6 @@ textarea {
     text-align: center;
 }
 
-
 @media (min-width: 768px){
     .scroll-top {
         inset-inline-end: 3rem;
@@ -215,9 +216,10 @@ textarea {
         opacity: 1;
         inset-block-end: 2.5rem;
     }
-    
+
     .section{
         padding-block: 7rem;
+        justify-content: space-between;
     }
     
 }
