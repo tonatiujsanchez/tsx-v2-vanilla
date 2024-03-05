@@ -448,20 +448,9 @@
     animation: float-up  1.5s ease-in-out infinite;
 }
 
-/* ===== ===== ===== ===== ===== FOOTER ===== ===== ===== ===== ===== */
-
-.footer {
-    padding-block: 1rem;
-    border-block-start: var(--border-primary);
-}
-
-.footer__copy {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    text-align: center;
-}
 
 @media (min-width: 768px){
+    
     .scroll-top {
         inset-inline-end: 3rem;
         padding: 0.4rem;

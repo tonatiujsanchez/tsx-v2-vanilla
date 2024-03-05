@@ -129,6 +129,10 @@ textarea {
     font-size: 1.8rem;
 }
 
+.button-change-theme:hover {
+    color: var(--title-color);
+}
+
 .link-external-icon {
     transform: rotate(-45deg);
     font-size: 2rem;
@@ -154,6 +158,20 @@ textarea {
 .svg__fill-contrast--dark {
     fill: var(--body-color);
 }
+
+/* ===== ===== ===== ===== ===== FOOTER ===== ===== ===== ===== ===== */
+
+.footer {
+    padding-block: 1rem;
+    border-block-start: var(--border-primary);
+}
+
+.footer__copy {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
 
 @media (min-width: 768px){
     .section{
