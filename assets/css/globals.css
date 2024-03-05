@@ -159,6 +159,37 @@ textarea {
     fill: var(--body-color);
 }
 
+/* ===== ===== ===== ===== ===== SCROLL TOP  ===== ===== ===== ===== ===== */
+
+.scroll-top {
+    position: fixed;
+    inset-inline-end: 2rem;
+    inset-block-end: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    z-index: 10;
+    border: var(--border-primary);
+    background: var(--content-color);
+    transition: all 0.5s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.scroll-top:hover {
+    background: var(--body-color);
+    color: var(--text-color);
+    border: 0.1rem solid var(--text-color);
+}
+
+.scroll-top__icon {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+
 /* ===== ===== ===== ===== ===== FOOTER ===== ===== ===== ===== ===== */
 
 .footer {
@@ -174,7 +205,19 @@ textarea {
 
 
 @media (min-width: 768px){
+    .scroll-top {
+        inset-inline-end: 3rem;
+        padding: 0.4rem;
+    }
+    
+    .scroll-top__show {
+        visibility: visible;
+        opacity: 1;
+        inset-block-end: 2.5rem;
+    }
+    
     .section{
         padding-block: 7rem;
-    }    
+    }
+    
 }
