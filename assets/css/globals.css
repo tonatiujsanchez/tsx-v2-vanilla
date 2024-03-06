@@ -186,6 +186,10 @@ textarea {
     border: 0.1rem solid var(--text-color);
 }
 
+.scroll-top:hover .scroll-top__icon{
+    animation: float-up 2s ease-in-out infinite;
+}
+
 .scroll-top__icon {
     font-size: 3rem;
     color: var(--text-color);

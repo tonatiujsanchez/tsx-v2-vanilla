@@ -173,6 +173,12 @@
     opacity: 0.8;
 }
 
+.project__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .project__title {
     font-weight: 500;
     font-size: 1.8rem;
@@ -193,9 +199,25 @@
     color: var(--text-color);
 }
 
+.project__description {
+    display: flex;
+    flex-direction: column;
+}
+
 .project__summary {
     color: var(--text-color);
     text-wrap: pretty;
+}
+
+.project__link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.project:hover .link-external-icon {
+    animation: float-up 2s ease-in-out infinite;
+    color: var(--title-color);
 }
 
 /* ===== ===== ===== ===== ===== EXPERIENCIA ===== ===== ===== ===== ===== */
@@ -369,9 +391,9 @@
     transition: all 0.4s;
     padding-inline: 1rem;
     font-size: 1.6rem;
+    pointer-events: none;
     z-index: -1;
 }
-
 
 .contact__form-input:hover {
     border: 0.1rem solid var(--text-color);
@@ -397,7 +419,6 @@
 .contact__form-input--message {
     height: 20rem;
 }
-
 
 .contact__form-submit-content {
     display: flex;
