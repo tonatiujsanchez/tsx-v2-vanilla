@@ -140,6 +140,10 @@ textarea {
     font-size: 2rem;
 }
 
+.icon__black svg{
+    fill: var(--title-color);
+}
+
 .section{
     padding-block: 4rem;
 }
