@@ -74,8 +74,8 @@
 }
 
 .subtitle {
-    font-size: 1.8rem;
-    color: var(--text-color);
+    font-size: 1.6rem;
+    color: var(--title-color);
     margin-block-end: 2rem;
     font-weight: 500;
 }
@@ -123,7 +123,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    margin-block-end: 7rem;
+    margin-block-end: 8rem;
 }
 
 /* Versions */
@@ -178,6 +178,36 @@
 
 .links__item-name i{
     font-size: 1.8rem;
+}
+
+/* ===== ===== ===== ===== ===== PROJECT CONTACT ===== ===== ===== ===== ===== */
+
+.project-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    margin-block-end: 8rem;
+}
+
+.project-contact__text {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.project-contact__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.project-contact__link:hover {
+    color: var(--title-color);
+}
+
+.project-contact__link:hover .link-external-icon {
+    animation: float-up 2s ease-in-out infinite;
 }
 
 
