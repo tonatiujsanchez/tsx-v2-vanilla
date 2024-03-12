@@ -73,6 +73,14 @@
     padding-inline: 1rem;
 }
 
+.project-figure__caption-link {
+    text-decoration: underline;
+}
+
+.project-figure__caption-link:hover {
+    color: var(--title-color);
+}
+
 .subtitle {
     font-size: 1.6rem;
     color: var(--title-color);
@@ -110,6 +118,10 @@
 }
 
 .technology__icon svg {
+    width: 2rem;
+}
+
+.technology__icon img {
     width: 2rem;
 }
 
@@ -193,6 +205,7 @@
 .project-contact__text {
     color: var(--text-color);
     text-align: center;
+    text-wrap: pretty;
 }
 
 .project-contact__link {
