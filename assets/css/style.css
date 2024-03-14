@@ -50,8 +50,13 @@
     position: absolute;
     inset-inline-start: 0.5rem;
     inset-block-end: 0;
-    fill: var(--title-color);
     transition: 0.2s;
+    display: flex;
+    justify-items: flex-end;
+}
+
+.nav__item--indicator-svg {
+    fill: var(--title-color);
 }
 
 /* Move indicator */
@@ -480,17 +485,17 @@
     gap: 1rem;
     padding-block: 0.4rem;
     padding-inline: 2rem;
-    background-color: var(--content-color);
+    background-color: var(--title-color);
     border-radius: 0.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);
+    font-weight: 600;
+    color: var(--content-color);
     border: 0.1rem solid transparent;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .contact__form-submit:hover {
-    color: var(--title-color);
-    border: 0.1rem solid var(--text-color);
+    border: var(--border-primary);
 }
 
 .contact__form-submit:hover .contact__form-submit-icon {

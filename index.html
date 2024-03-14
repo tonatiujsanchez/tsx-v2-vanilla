@@ -8,13 +8,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <meta name="description" content="Soy Desarrollador web completo con un fuerte compromiso con la colaboración y solución de problemas de software.">
+    <meta name="keywords" content="Desarrollador FullStack, React Developer, Next.js, Node.js"/>
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Tonatiuj Sánchez" />
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    
 </head>
 
 <body>
@@ -31,48 +36,50 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item nav__link-icon">
-                        <a class="nav__link" href="#about">
+                        <a class="nav__link" href="#hola" aria-label="Inicio">
                             <i class='bx bxs-home' ></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#proyectos">
+                        <a class="nav__link" href="#proyectos" aria-label="Proyectos">
                             <i class='bx bxs-briefcase-alt-2 nav__link-icon'></i>
                             <span class="nav__link-text">Proyectos</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#experiencia">
+                        <a class="nav__link" href="#experiencia" aria-label="Experiencia">
                             <i class='bx bx-laptop nav__link-icon' ></i>
                             <span class="nav__link-text">Experiencia</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#habilidades">
+                        <a class="nav__link" href="#habilidades" aria-label="Habilidades">
                             <i class='bx bx-code-alt nav__link-icon' ></i>
                             <span class="nav__link-text">Habilidades</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#contacto">
+                        <a class="nav__link" href="#contacto" aria-label="Contacto">
                             <i class='bx bxs-envelope nav__link-icon' ></i>
                             <span class="nav__link-text">Contacto</span>
                         </a>
                     </li>
-                    <svg class="nav__item--indicator" width="94" height="55" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="47" cy="28" rx="24" ry="28"/>
-                        <path d="M24 20C24 20 28 55.9999 48 56L0 55.9997C18 55.9998 24 20 24 20Z"/>
-                        <path d="M70 20C70 20 66 55.9999 46 56L94 55.9997C76 55.9998 70 20 70 20Z"/>
-                    </svg>
+                    <li class="nav__item--indicator">
+                        <svg class="nav__item--indicator-svg" width="94" height="55" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="47" cy="28" rx="24" ry="28"/>
+                            <path d="M24 20C24 20 28 55.9999 48 56L0 55.9997C18 55.9998 24 20 24 20Z"/>
+                            <path d="M70 20C70 20 66 55.9999 46 56L94 55.9997C76 55.9998 70 20 70 20Z"/>
+                        </svg>
+                    </li>
                 </ul>
             </nav>
-            <button class="button-change-theme">
+            <button class="button-change-theme" aria-label="Cambiar tema">
                 <i class='bx bx-sun' ></i>
             </button>
         </div>
     </header>
     <main class="container">
-        <section id="about" class="hero">
+        <section id="hola" class="hero">
             <div class="hero__content">
                 <figure class="hero__figure">
                     <img 
@@ -88,23 +95,29 @@
                     </div>
                     <ul class="hero__social-list">
                         <li class="hero__social-item">
-                            <a href="https://www.linkedin.com/in/tonatiujsanchez/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="https://www.linkedin.com/in/tonatiujsanchez/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+                                <i class='bx bxl-linkedin-square'></i>
+                        </a>
                         </li>
                         <li class="hero__social-item">
-                            <a href="https://github.com/tonatiujsanchez" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
+                            <a href="https://github.com/tonatiujsanchez" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class='bx bxl-github' ></i>
+                            </a>
                         </li>
                         <li class="hero__social-item">
-                            <a href="https://twitter.com/tonatiujsanchez" target="_blank" rel="noopener noreferrer"><i class='bx bxl-twitter' ></i></a>
+                            <a href="https://twitter.com/tonatiujsanchez" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class='bx bxl-twitter' ></i>
+                        </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <p class="hero__about">Con un fuerte compromiso con la colaboración y solución de problemas de software, cumpliendo con los altos estándares de experiencia de usuario, usabilidad y rendimiento. He tenido la oportunidad de utilizar diferentes programas de diseño y lenguajes de programación para satisfacer con éxito las necesidades de diferentes tipos de clientes.</p>
             <div class="hero__actions">
-                <a class="hero__actions-link" href="#">
+                <a class="hero__actions-link" href="#" aria-label="Descargar CV">
                     <i class='bx bx-download hero__download-cv' ></i> Descargar CV 
                 </a>
-                <a class="hero__actions-link" href="#contacto">
+                <a class="hero__actions-link" href="#contacto" aria-label="Ir a contacto">
                     <i class='bx bx-mail-send' ></i>Contacto <i class='bx bx-right-arrow-alt link-external-icon'></i>
                 </a>
             </div>
