@@ -131,7 +131,7 @@ textarea {
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .button-change-theme:hover {

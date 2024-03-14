@@ -39,7 +39,7 @@
 
 .nav__link {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 2.2rem;
     display: flex;
     align-items: center;
     color: var(--text-color-light);
@@ -67,7 +67,8 @@
 .hero__content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    row-gap: 0.5rem;
+    column-gap: 2rem;
     padding-block-end: 2rem;
 }
 
@@ -269,6 +270,7 @@
 }
 
 .job__header-period {
+    min-width: 8rem;
     color: var(--text-color);
 }
 
@@ -286,7 +288,7 @@
     align-items: center;
     gap: 1rem;
     padding-block: 1.2rem;
-    padding-inline: 1.4rem;
+    padding-inline: 1rem;
     border: var(--border-primary);
     border-radius: 0.5rem;
 }
@@ -527,5 +529,9 @@
     .skills {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.2rem;
+    }
+
+    .skill {
+        padding-inline: 1.4rem;
     }
 }
