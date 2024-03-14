@@ -2,7 +2,7 @@ const formContact = document.querySelector('#form-contact')
 const formContactSubmit = document.querySelector('.contact__form-submit')
 
 
-const showToast = ({ type, msg, time=2000 }) => {
+const showToast = ({ type, msg, time=2500 }) => {
     const toast = document.querySelector('.toast')
     const toastIcon = document.querySelector('.toast__icon')
     const toastMsg = document.querySelector('.toast__msg')
