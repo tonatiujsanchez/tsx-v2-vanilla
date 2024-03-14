@@ -1,14 +1,17 @@
 @import url('./globals.css');
 
 .header {
-    position: sticky;
-    inset-block-start: 0;
-    padding-block: 1.5rem;
-    background-color: var(--body-color);
+    position: fixed;
+    inset-block-end: 0;
+    width: 100%;
+    padding-block: 1.8rem;
+    background: var(--container-color);
+    z-index: 1;
 }
 
 .header__scroll {
-    border-block-end: var(--border-primary)
+    border-block-start: var(--border-primary);
+    box-shadow: var(--shadow-primary-top);
 }
 
 .navbar {
@@ -32,13 +35,13 @@
 }
 
 .hero {
-    padding-block-start: 2rem;
+    padding-block-start: 3rem;
 }
 
 .project-title {
     color: var(--title-color);
     font-size: 2.5rem;
-    margin-block-end: 0.5rem;
+    margin-block-end: 1.5rem;
 }
 
 .project-year {
@@ -225,13 +228,24 @@
 
 
 @media (min-width: 768px){
+    
     .header {
+        background-color: var(--body-color);
         padding-block: 2rem;
+        position: fixed;
+        inset-block-start: 0;
+        inset-block-end: unset;
+        border-block-start: none;
+    }
+    
+    .header__scroll {
+        box-shadow: none;
+        border-block-end: var(--border-primary)
     }
     
     .hero {
-        padding-block-start: 5rem;
-    }
+        padding-block-start: 9rem;
+    }    
 
     .project-info {
         gap: 8rem;
