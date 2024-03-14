@@ -11,8 +11,10 @@ const scrollActive = ()=>{
 
         if( scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector(`.nav__item a[href*=${ sectionId }]`)?.classList.add('nav__link--active')
+            document.querySelector(`.nav__item a[href*=${ sectionId }]`)?.parentElement.classList.add('nav__item--active')
         }else{
-            document.querySelector(`.nav__item a[href*=${ sectionId }]`)?.classList.remove('nav__link--active');
+            document.querySelector(`.nav__item a[href*=${ sectionId }]`)?.classList.remove('nav__link--active')
+            document.querySelector(`.nav__item a[href*=${ sectionId }]`)?.parentElement.classList.remove('nav__item--active')
         }
     })
 }

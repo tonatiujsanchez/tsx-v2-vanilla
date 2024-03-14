@@ -18,23 +18,61 @@
 
 .nav {
     position: fixed;
-    inset-block-end: 2rem;
+    inset-block-end: 0;
     background: var(--container-color);
-    width: 90%;
+    width: 100%;
     z-index: 10;
-    border-radius: 0.5rem;
-    border: var(--border-primary);
+    border-block-start: var(--border-primary);
     inset-inline-end: 50%;
     transform: translateX(50%);
+    box-shadow: var(--shadow-primary-top);
 }
 
 .nav__list {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    padding-block: 2rem;
-    box-shadow: var(--shadow-primary);
+    gap: 3.4rem;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    max-width: 32rem;
+    min-width: 32rem;
+    margin-inline: auto;
+}
+
+.nav__item {
+    z-index: 10;
+}
+
+/* Indicator link */
+.nav__item--indicator {
+    position: absolute;
+    inset-inline-start: 0.5rem;
+    inset-block-end: 0;
+    fill: var(--title-color);
+    transition: 0.2s;
+}
+
+/* Move indicator */
+.nav__item:nth-child(1).nav__item--active ~ .nav__item--indicator {
+    transform: translateX(-0.4rem);
+}
+
+.nav__item:nth-child(2).nav__item--active ~ .nav__item--indicator {
+    transform: translateX(5.2rem);
+}
+
+.nav__item:nth-child(3).nav__item--active ~ .nav__item--indicator {
+    transform: translateX(10.8rem);
+}
+
+.nav__item:nth-child(4).nav__item--active ~ .nav__item--indicator {
+    transform: translateX(16.4rem);
+}
+
+.nav__item:nth-child(5).nav__item--active ~ .nav__item--indicator {
+    transform: translateX(22rem);
 }
 
 .nav__link {
@@ -51,8 +89,12 @@
 }
 
 .nav__link--active {
-    color: var(--title-color);
+    color: var(--body-color);
     text-decoration: underline;
+}
+
+.nav__link--active:hover {
+    color: var(--body-color);
 }
 
 .nav__link-text {
@@ -464,6 +506,10 @@
     border: 0.1rem solid transparent;
 }
 
+.footer--home {
+    border: none;
+    margin-block-end: 6.5rem;
+}
 
 @media (min-width: 768px){
 
@@ -486,9 +532,15 @@
         width: auto;
         border-radius: none;
         border: none;
-        transform: translate(0)
+        transform: translate(0);
+        box-shadow: none;
     }
 
+    .nav__item--indicator  {
+        display: none;
+    }
+
+    
     .nav__list {
         padding-block: 0;
         box-shadow: none;
@@ -498,6 +550,10 @@
         font-weight: 300;
         font-size: 1.6rem;
         color: var(--text-color);
+    }
+
+    .nav__link--active:hover {
+        color: var(--title-color);
     }
 
     .nav__link-text {
@@ -534,4 +590,10 @@
     .skill {
         padding-inline: 1.4rem;
     }
+
+    .footer--home {
+        border-block-start: var(--border-primary);
+        margin-block-end: 0;
+    }
+    
 }

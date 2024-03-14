@@ -17,6 +17,7 @@
     --content-color: #E5E5E5;
     --gray-primary-color: #DBDCDF;
     --black-primary-color: #2B2B2B;
+    --white-primary-color: #F8FAFC;
 
     --success-color: #07AC4F;
     --error-color: #d30000;
@@ -41,6 +42,7 @@
     
     /*========== Sombras ==========*/
     --shadow-primary: 0 0.5rem 1rem var(--gray-primary-color); 
+    --shadow-primary-top: 0 -0.1rem 0.6rem var(--gray-primary-color); 
 }
 
 html {
@@ -59,8 +61,11 @@ body.dark-theme{
     --body-color: #18181B;
     --container-color: #242424;
     --content-color: #222222;
+
     --border-primary: 0.1rem solid var(--black-primary-color);
     --shadow-primary: 0 0.5rem 1.4rem var(--black-primary-color);
+    --shadow-primary-top: 0 -0.1rem 1.6rem var(--black-primary-color); 
+
 
 }
 
@@ -184,16 +189,16 @@ textarea {
     position: fixed;
     inset-inline-end: 50%;
     transform: translateX(50%);
-    inset-block-end: -10rem;
+    inset-block-start: -10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
-    background: var(--title-color);
-    color: var(--container-color);
+    background: var(--white-primary-color);
+    color: var(--black-primary-color);
     padding-inline: 2rem;
     min-width: 22rem;
-    width: 95%;
+    width: 85%;
     padding-block: 1.2rem;
     border-radius: 0.5rem;
     z-index: 99;
@@ -206,7 +211,7 @@ textarea {
 
 .toast__show {
     visibility: visible;
-    inset-block-end: 10rem;
+    inset-block-start: 5rem;
 }
 
 
@@ -269,7 +274,6 @@ textarea {
 
 /* ===== ===== ===== ===== ===== FOOTER ===== ===== ===== ===== ===== */
 .footer {
-    margin-block-start: 8rem;
     padding-block: 1rem;
     border-block-start: var(--border-primary);
 }
@@ -288,9 +292,14 @@ textarea {
 }
 
 @media (min-width: 768px){
-    
+
+    .toast {
+        inset-block-start: unset;
+        inset-block-end: -10rem;
+    }
+
     .toast__show {
-        inset-block-end: 6rem;
+        inset-block-end: 7rem;
     }
 
     .scroll-top {
@@ -310,7 +319,7 @@ textarea {
     }
 
     .footer {
-        margin-block-start: 2rem;
+        margin-block-start: 1rem;
         padding-block: 1rem;
         border-block-start: var(--border-primary);
     }
