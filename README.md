@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código fuente de mi portafolio personal, desarrollado con HTML, CSS y un poco de JavaScript. El propósito de este proyecto es presentar mi experiencia, habilidades y proyectos en un formato interactivo y atractivo para posibles empleadores y clientes.
 
-![Portafolio de Tonatiuj Sánchez](/assets/img/tsx.png)
+[![Portafolio de Tonatiuj Sánchez](/assets/img/tsx.png)](https://tsx-dev.netlify.app)
 
 ## Características principales
 
@@ -16,7 +16,7 @@ Este repositorio contiene el código fuente de mi portafolio personal, desarroll
     - Experiencia
     - Habilidades
     - Contacto
-    - Página de destalle del proyecto
+    - Página de destalles del proyecto
 
 - **Dark y Light Mode:** El portafolio cuenta con un modo oscuro y un modo claro, permitiendo a los usuarios elegir el tema que prefieran para la interfaz.
 
@@ -46,6 +46,6 @@ Si deseas contribuir a este proyecto, ¡eres bienvenido! Puedes abrir un __issue
 
 ## Contacto
 
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme en https://tsx-dev.vercel.app/#contacto.
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme en https://tsx-dev.netlify.app/#contacto.
 
 ¡Gracias por visitar mi portafolio! Espero que disfrutes explorando mi trabajo. 🤗
