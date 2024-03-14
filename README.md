@@ -42,7 +42,7 @@ git clone https://github.com/tonatiujsanchez/tsx-v2-vanilla
 
 ## Contribución
 
-Si deseas contribuir a este proyecto, ¡eres bienvenido! Puedes abrir un __issue__ para discutir nuevas características o problemas, o enviar una solicitud de extracción con tus mejoras propuestas.
+Si deseas contribuir a este proyecto, ¡eres bienvenido! Puedes abrir un __issue__ para discutir nuevas características o problemas, o enviar un __pull request__ con tus mejoras propuestas.
 
 ## Contacto
 
