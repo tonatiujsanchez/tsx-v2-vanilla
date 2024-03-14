@@ -24,6 +24,8 @@
     z-index: 10;
     border-radius: 0.5rem;
     border: var(--border-primary);
+    inset-inline-end: 50%;
+    transform: translateX(50%);
 }
 
 .nav__list {
@@ -31,7 +33,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    padding-block: 1.7rem;
+    padding-block: 2rem;
     box-shadow: var(--shadow-primary);
 }
 
@@ -428,15 +430,18 @@
 .contact__form-submit {
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-width: 14rem;
+    min-height: 4.6rem;
     gap: 1rem;
-    padding-block: 1.2rem;
+    padding-block: 0.4rem;
     padding-inline: 2rem;
     background-color: var(--content-color);
     border-radius: 0.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    transition: color 0.3s, background-color 0.3s, border 0.3s;
     border: 0.1rem solid transparent;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .contact__form-submit:hover {
@@ -446,6 +451,15 @@
 
 .contact__form-submit:hover .contact__form-submit-icon {
     animation: float-up  1.5s ease-in-out infinite;
+}
+
+.contact__form-submit:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.contact__form-submit:disabled:hover {
+    border: 0.1rem solid transparent;
 }
 
 
@@ -470,6 +484,7 @@
         width: auto;
         border-radius: none;
         border: none;
+        transform: translate(0)
     }
 
     .nav__list {

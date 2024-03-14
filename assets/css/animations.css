@@ -22,3 +22,8 @@
     }
 }
   
+@keyframes rotation {
+    to{
+        transform: rotate( 1turn )
+    }
+}
