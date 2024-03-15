@@ -141,6 +141,11 @@
     overflow: hidden;
 }
 
+.hero__figure-img {
+    width: 9rem;
+    height: 9rem;
+}
+
 .hero__social-list {
     margin-top: 1rem;
     display: flex;
