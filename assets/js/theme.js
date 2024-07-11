@@ -11,11 +11,11 @@ const theme = {
 
 const onChangeTheme = () => {
     const selectedTheme = localStorage.getItem( themeKey )
-    const iconTheme = selectedTheme === theme.light ? `<i class='bx bx-sun' ></i>` : `<i class='bx bxs-moon' ></i>`
+    const iconTheme = selectedTheme === theme.dark ? `<i class='bx bxs-moon' ></i>` : `<i class='bx bx-sun' ></i>`
 
     if(!selectedTheme){
-        body.classList.add( theme.light ) 
-        localStorage.setItem(themeKey, theme.light)
+        body.classList.add( theme.dark ) 
+        localStorage.setItem(themeKey, theme.dark)
         return
     }
 
