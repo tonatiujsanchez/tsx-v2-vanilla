@@ -46,6 +46,6 @@ Si deseas contribuir a este proyecto, ¡eres bienvenido! Puedes abrir un __issue
 
 ## Contacto
 
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme en https://tsx-dev.netlify.app/#contacto.
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme en https://tsx-dev.vercel.app/#contacto.
 
 ¡Gracias por visitar mi portafolio! Espero que disfrutes explorando mi trabajo. 🤗
