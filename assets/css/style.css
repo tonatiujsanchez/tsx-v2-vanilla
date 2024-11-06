@@ -134,16 +134,16 @@
 .hero__figure {
     width: 10rem;
     height: 10rem;
-    padding-block-start: 1.2rem;
-    padding-inline: 0.5rem;
     background: var(--content-color);
     border-radius: 100%;
     overflow: hidden;
 }
 
 .hero__figure-img {
-    width: 9rem;
-    height: 9rem;
+    height: 10rem;
+    object-fit:cover;
+    object-position:center;
+    transform:rotate(8deg);
 }
 
 .hero__social-list {
